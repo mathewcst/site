@@ -1,17 +1,31 @@
 module.exports = {
   title: 'Matheus Costa',
-  description: 'My Portfolio',
+  description: 'Desenvolvedor Frontend',
+  ga: 'UA-132697695-1',
+  serviceWorker: true,
   themeConfig: {
-    nav: [
-      { text: 'Home', link: '/'},
-      { text: 'Other Nav', link: '/other'}
-    ],
+    repo: 'mathewcst/site',
+    repoLabel: 'Just my portfolio',
+    search: false,
+    navbar: false,
+    lastUpdated: true,
   },
-  plugins: [
-    '@vuepress/google-analytics',
-    {
-      'ga': 'UA-132697695-1'
+  locales: {
+    '/': {
+      lang: 'pt-BR',
+      title: 'Matheus BR'
+    },
+    '/projetos': {
+      lang: 'en-US',
+      title: 'Matheus US'
     }
-  ],
-  evergreen: true
+  },
+  evergreen: true,
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@images': 'assets/images'
+      }
+    }
+  }
 }
