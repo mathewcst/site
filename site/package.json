@@ -1,0 +1,35 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Just my portfolio build with Vuepress and a custom theme",
+  "scripts": {
+    "serve": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathewcst/site.git"
+  },
+  "keywords": [
+    "frontend",
+    "front",
+    "portfolio",
+    "webdesign",
+    "vue",
+    "vuepress"
+  ],
+  "author": "Matheus Costa <eu@mathewcosta.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mathewcst/site/issues"
+  },
+  "homepage": "https://github.com/mathewcst/site#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vuepress": "^0.14.8"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.0"
+  }
+}
