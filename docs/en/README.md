@@ -7,7 +7,7 @@ footer: MIT | Feito com ❤️ e VuePress
 ---
 
 ## Hello there!
-I'm Matheus Costa, I have {{ age }} years old and I'm a fullstack developer for {{ frontAge }} years now. I've stated my career with PHP at 2009, making full systems (at the time that was no such thing as frontend or backend in Brazil). Some years later I've started to love more and more working with frontend and the famous **Web 2.0**, the **tableless** and some time later for **AngularJS**.
+I'm Matheus Costa, I am {{ age }} years old and I'm a fullstack developer for {{ frontAge }} years now. I've stated my career with PHP at 2009, making whole systems (at the time that was no such thing as frontend or backend in Brazil). Some years later I've started to love more and more working with frontend and the famous **Web 2.0**, **tableless** and some time later for **AngularJS**.
 
 Nowdays I work as a freelancer developing products for companies.
 
