@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /avatar-site.png
-actionText: Baixar Currículo
+actionText: Ver Currículo
 actionLink: https://docs.google.com/document/d/1ul-aFVY05Mi0AdA1cjqrCpV9sG8dx1X1QLj-hd_oLw4/edit?usp=sharing
 footer: MIT | Feito com ❤️ e VuePress
 ---

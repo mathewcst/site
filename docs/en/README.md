@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /avatar-site.png
-actionText: Download My CV
+actionText: See My CV
 actionLink: https://docs.google.com/document/d/1cuClxObtxud29j_Jj7EVLhKlieuU_tO1u-RSarqFLAY/edit?usp=sharing
 footer: MIT | Feito com ❤️ e VuePress
 ---
