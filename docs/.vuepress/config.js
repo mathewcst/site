@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Matheus Costa',
   description: 'desenvolvedor fullstack',
-  base: '/site/',
+  base: '/',
   ga: 'UA-132697695-1',
   serviceWorker: true,
   themeConfig: {
