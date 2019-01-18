@@ -14,7 +14,7 @@ Nowdays I work as a freelancer developing products for companies.
 ### Stack
 My *go to* tool this days is Javascript :metal: (Vue, React, Node), but I do work with PHP and Wordpress :punch: and, some times, even C# :video_game: (learning to make games, it's awesome!)
 
-I'm completly in love with [Vue](https://vuejs.org/) :heart: (btw this site is built with VuePress)
+I'm completly in love with [Vue](https://vuejs.org/) :heart: (btw, this site is built with VuePress)
 
 ### Clients
 
@@ -23,7 +23,7 @@ Some companies that I've work with:
 [Qranio](https://www.qranio.com/), [BRMedia Group](https://br-mediagroup.com/), [Pagar.me](https://pagar.me/) e [Digital House Brasil](https://br.digitalhouse.com/)]
 
 ## Personal Projects
-As the majority of my time, today, is to work as freelancer, I also do some side projects in-between jobs. This very site is one of them, build with [VuePress](https://v0.vuepress.vuejs.org/) :heart:.
+As the majority of my time today, is to work as freelancer, I also do some side projects in-between jobs. This very site is one of them, build with [VuePress](https://v0.vuepress.vuejs.org/) :heart:.
 
 Another project is called LoDuo, a tool to help :video_game: League of Legends Players find better partners (duos) for better matchs. I can't share it (yet) but soon enough I'll post a link here.
 

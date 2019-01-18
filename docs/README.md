@@ -14,7 +14,7 @@ Hoje atuo como freelancer desenvolvendo sistemas completos (conhecido também co
 ### Stack
 Minha ferramenta principal hoje é Javascript :metal: (Vue, React, Node), mas também trabalho com PHP/Wordpress :punch: e de vez em quando arrisco um C# :video_game: (aprendendo a fazer games, é massa!).
 
-Hoje estou apaixonado com [Vue](https://vuejs.org/) :haert: (inclusive esse site é feito com Vuepress)
+Hoje estou apaixonado com [Vue](https://vuejs.org/) :heart: (inclusive, esse site é feito com VuePress)
 
 ### Clientes
 
@@ -23,9 +23,9 @@ Algumas empresas que já trabalhei:
 [Qranio](https://www.qranio.com/), [BRMedia Group](https://br-mediagroup.com/), [Pagar.me](https://pagar.me/) e [Digital House Brasil](https://br.digitalhouse.com/)]
 
 ## Projetos Pessoais
-Como a maior parte do meu tempo, hoje, é atuar como freelancer, me dedico a alguns projetos pessoais também. Um deles é este próprio site que é feito em [VuePress](https://v0.vuepress.vuejs.org/) :heart:
+Como a maior parte do meu tempo hoje, é atuar como freelancer, me dedico a alguns projetos pessoais também. Um deles é este próprio site que é feito em [VuePress](https://v0.vuepress.vuejs.org/) :heart:
 
-Outro é um projeto chamado LoDuo, para ajudar jogadores de :video_game: League of Legends a acharem melhores parceiros para suas partidas. Ainda não posso compartilhar mas logo terá um link aqui.
+Outro é um projeto chamado LoDuo, para ajudar jogadores de :video_game: League of Legends a acharem melhores parceiros para suas partidas. Ainda não posso compartilhar, mas logo terá um link aqui.
 
 Você pode me achar no [Twitter](https://twitter.com/mathewcst), no [GitHub](https://github.com/mathewcst) e no [LinkedIn](https://www.linkedin.com/in/mathewcst)
 

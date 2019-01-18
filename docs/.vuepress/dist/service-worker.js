@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "e43d6cc6d79e3950c8868d636b6e7763"
+    "revision": "cdab58bc2291251f70e2c4fbd5148039"
   },
   {
     "url": "assets/css/0.styles.8285d877.css",
@@ -36,20 +36,20 @@ self.__precacheManifest = [
     "revision": "b328f011e78717833b9ae4d3d4c0c21d"
   },
   {
-    "url": "assets/js/3.916a8de8.js",
-    "revision": "c55c648a1e6eb46c07d3f9d7750455fd"
+    "url": "assets/js/3.9325c144.js",
+    "revision": "9ecf765e23d8fb5af189f666d3fb93eb"
   },
   {
-    "url": "assets/js/4.6e11d55f.js",
-    "revision": "0c57dbbd74a344970470bfc59d902bf0"
+    "url": "assets/js/4.125fe926.js",
+    "revision": "068813dec5e0dd846301afff417bdf88"
   },
   {
     "url": "assets/js/5.376a5c13.js",
     "revision": "59c458c0525018c553b3b143a229c581"
   },
   {
-    "url": "assets/js/app.5f079f82.js",
-    "revision": "86416f501de9fe2f8ccafb2450e43cd3"
+    "url": "assets/js/app.2502841f.js",
+    "revision": "8b0f2e4ba56ae6cff25491c6e5df1248"
   },
   {
     "url": "avatar-site.png",
@@ -57,11 +57,11 @@ self.__precacheManifest = [
   },
   {
     "url": "en/index.html",
-    "revision": "9421283c433eb7ed19f00e512690be50"
+    "revision": "06345994de197019fec15e020387b3cf"
   },
   {
     "url": "index.html",
-    "revision": "36738fc908c7bb11c615b44bdc85f279"
+    "revision": "8db5fbc7fbc5dc727ca15e11dcea1c3b"
   },
   {
     "url": "profile.jpg",
