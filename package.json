@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Just my portfolio build with Vuepress and a custom theme",
   "scripts": {
-    "serve": "vuepress dev",
-    "build": "vuepress build",
-    "build:deploy": "deploy.sh"
+    "serve": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
