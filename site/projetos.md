@@ -1,5 +1,0 @@
----
-pageClass: projetos
----
-
-# Projetos

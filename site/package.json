@@ -1,8 +1,7 @@
 {
   "name": "site",
   "version": "1.0.0",
-  "description": "Just my portfolio build with Vuepress",
-  "main": "index.html",
+  "description": "Just my portfolio build with Vuepress and a custom theme",
   "scripts": {
     "serve": "vuepress dev",
     "build": "vuepress build"
@@ -15,7 +14,9 @@
     "frontend",
     "front",
     "portfolio",
-    "webdesign"
+    "webdesign",
+    "vue",
+    "vuepress"
   ],
   "author": "Matheus Costa <eu@mathewcosta.com>",
   "license": "MIT",
@@ -27,5 +28,8 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "vuepress": "^0.14.8"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.0"
   }
 }

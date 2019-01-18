@@ -1,23 +1,48 @@
 module.exports = {
   title: 'Matheus Costa',
-  description: 'Desenvolvedor Frontend',
+  description: 'desenvolvedor fullstack',
   ga: 'UA-132697695-1',
   serviceWorker: true,
   themeConfig: {
     repo: 'mathewcst/site',
-    repoLabel: 'Just my portfolio',
+    repoLabel: 'Ver no Github',
     search: false,
-    navbar: false,
     lastUpdated: true,
+    locales: {
+      '/': {
+        selectText: 'Português',
+        label: 'Português',
+        serviceWorker: {
+          updatePopup: {
+            message: "New content is available.",
+            buttonText: "Refresh"
+          }
+        },
+      },
+      '/en/': {
+        selectText: 'English',
+        label: 'English',
+        serviceWorker: {
+          updatePopup: {
+            message: "New content is available.",
+            buttonText: "Refresh"
+          }
+        },
+      }
+    }
+  },
+  markdown: {
+    lineNumbers: true,
   },
   locales: {
     '/': {
+      label: 'Português',
       lang: 'pt-BR',
-      title: 'Matheus BR'
     },
-    '/projetos': {
+    '/en/': {
+      label: 'English',
       lang: 'en-US',
-      title: 'Matheus US'
+      description: 'fullstack developer',
     }
   },
   evergreen: true,
