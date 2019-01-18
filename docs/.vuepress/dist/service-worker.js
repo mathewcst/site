@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "07d1cdfd08e162de958e1d75aa8b10ce"
+    "revision": "cc137daadfb06464ab019aa83757991d"
   },
   {
     "url": "assets/css/0.styles.e7314b4a.css",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "revision": "59c458c0525018c553b3b143a229c581"
   },
   {
-    "url": "assets/js/app.7e72a78a.js",
-    "revision": "67bba2e697d24de9c5f75de4c1af8d39"
+    "url": "assets/js/app.4e6ad7dd.js",
+    "revision": "67eb5af6eec313801448c59bcba7ddf9"
   },
   {
     "url": "avatar-site.png",
@@ -57,11 +57,11 @@ self.__precacheManifest = [
   },
   {
     "url": "en/index.html",
-    "revision": "b27ac2370e08a51c03cfb4933fc9d167"
+    "revision": "b7275837b97c6726810e508aa3012598"
   },
   {
     "url": "index.html",
-    "revision": "caf7bd12779d74d4d122ac871bd68f5a"
+    "revision": "71a3116489369a9c04969feee438a2cf"
   },
   {
     "url": "profile.jpg",
