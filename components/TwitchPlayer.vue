@@ -1,7 +1,7 @@
 <template>
   <div class="twitch-player">
     <iframe
-      src="https://player.twitch.tv/?channel=mathewcst&parent=localhost&muted=true"
+      src="https://player.twitch.tv/?channel=mathewcst&parent=mathewcosta.com&muted=true"
       height="720"
       width="100%"
       frameborder="0"
