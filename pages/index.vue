@@ -23,14 +23,7 @@
       </div>
 
       <div class="content--form">
-        <h2>Mande um Email</h2>
-        <form class="contact">
-          <input type="text" name="Nome" placeholder="Nome" />
-          <input type="email" name="Email" placeholder="Email" />
-          <input type="text" name="Assunto" placeholder="Assunto" />
-          <textarea name="Mensagem" placeholder="Mensagem" />
-          <button>Enviar</button>
-        </form>
+        <a target="_blank" href="mailto:teus123@gmail.com">EMAIL</a>
       </div>
     </div>
   </div>
@@ -54,36 +47,17 @@
   margin: 10px 0;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-}
-
 .content--form h2 {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
 }
 
-.contact input,
-.contact textarea {
-  font-size: 18px;
-  font-weight: 400;
-  padding: 8px 10px;
-  margin: 5px 0;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
-  background: var(--grey-light);
-  border: 0;
-}
-
-.contact textarea {
-  height: 150px;
-}
-
-.contact button {
+.content--form a {
   width: 100%;
   height: 50px;
   display: flex;
+  text-decoration: none;
   justify-content: center;
   align-items: center;
   color: var(--grey-dark);
