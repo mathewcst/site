@@ -48,6 +48,7 @@ export default {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     '@nuxtjs/fontawesome',
+    '@aceforth/nuxt-netlify',
   ],
   /*
    ** Nuxt.js modules
@@ -71,6 +72,17 @@ export default {
     icons: {
       brands: ['faTwitch', 'faTwitter', 'faInstagram', 'faYoutube'],
     },
+  },
+  netlify: {
+    mergeSecurityHeaders: true,
+    redirects: [
+      {
+        from: 'https://live.mathewcosta.com/*',
+        to: ' https://twitch.tv/mathewcst/:splat',
+        status: 301,
+        force: true,
+      },
+    ],
   },
   /*
    ** Axios module configuration
