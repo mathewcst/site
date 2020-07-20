@@ -30,15 +30,13 @@
 </template>
 
 <style>
-.container {
-  padding: 0 0 50px;
-}
-
 .content {
   padding: 0 5%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
   column-gap: 50px;
+  padding-bottom: 50px;
 }
 
 .content--bio p {
@@ -70,5 +68,12 @@
   margin: 10px 0 0;
   background-image: linear-gradient(to top, black 50%, var(--orange) 50%);
   cursor: pointer;
+}
+
+@media screen and (min-width: 860px) {
+  .content {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 </style>

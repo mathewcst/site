@@ -17,6 +17,10 @@ export default Vue.extend({})
   --orange: #e4b363;
   --grey-dark: #313638;
   --grey-light: #e8e9eb;
+  --blue: #1da1f2;
+  --purple: #6441a4;
+  --magenta: #e1306c;
+  --red: #f00;
   --headerHeight: 250px;
 }
 

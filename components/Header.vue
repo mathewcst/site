@@ -20,7 +20,7 @@ export default Vue.extend({
 <style>
 .app--header {
   display: grid;
-  grid-template-columns: 120px auto;
+  grid-template-columns: 80px auto;
   grid-template-rows: auto;
   justify-content: center;
   align-items: center;
@@ -28,14 +28,29 @@ export default Vue.extend({
 }
 
 .avatar {
-  max-width: 120px;
-  max-height: 120px;
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .header--title h1 {
-  font-size: 85px;
+  font-size: 40px;
   font-weight: 900;
   text-transform: uppercase;
   color: var(--grey-dark);
+}
+
+@media screen and (min-width: 860px) {
+  .app--header {
+    grid-template-columns: 120px auto;
+  }
+
+  .avatar {
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .header--title h1 {
+    font-size: 85px;
+  }
 }
 </style>

@@ -67,6 +67,7 @@ export default Vue.extend({
 <style>
 .social-media {
   margin: 15px 0;
+  display: block;
 }
 
 .media--list {
@@ -74,8 +75,9 @@ export default Vue.extend({
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 5%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 15px;
 }
 
 .media--item {
@@ -100,19 +102,27 @@ export default Vue.extend({
 }
 
 .media--twitter {
-  background-image: linear-gradient(to top, #1da1f2 50%, var(--orange) 50%);
+  background-image: linear-gradient(to top, var(--blue) 50%, var(--orange) 50%);
 }
 
 .media--twitch {
-  background-image: linear-gradient(to top, #6441a4 50%, var(--orange) 50%);
+  background-image: linear-gradient(
+    to top,
+    var(--purple) 50%,
+    var(--orange) 50%
+  );
 }
 
 .media--instagram {
-  background-image: linear-gradient(to top, #e1306c 50%, var(--orange) 50%);
+  background-image: linear-gradient(
+    to top,
+    var(--magenta) 50%,
+    var(--orange) 50%
+  );
 }
 
 .media--youtube {
-  background-image: linear-gradient(to top, #f00 50%, var(--orange) 50%);
+  background-image: linear-gradient(to top, var(--red) 50%, var(--orange) 50%);
 }
 
 .media--link:hover {
@@ -123,5 +133,14 @@ export default Vue.extend({
 .media--icon {
   margin-right: 10px;
   font-size: 20px;
+}
+
+@media screen and (min-width: 860px) {
+  .media--list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 5%;
+    row-gap: auto;
+  }
 }
 </style>
