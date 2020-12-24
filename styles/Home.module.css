@@ -18,6 +18,9 @@
   height: 100%;
   z-index: 1;
   overflow: hidden;
+  transform-origin: top center;
+  will-change: transform;
+  transition: all 100ms linear;
 }
 
 .code {

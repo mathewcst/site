@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css'
 import { materialDark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 export default function Home() {
-  const [position, setPosition] = useState('95%')
+  const [position, setPosition] = useState('0.95')
 
   const codeString = `import { useState } from 'react'
 import Draggable from 'react-draggable'
@@ -72,14 +72,13 @@ export default function Home() {
 
     const percentageToCalc = 0.95
 
-    const finalPos =
-      ((windowHeight * percentageToCalc + yPos) / windowHeight) * 100
+    const finalPos = (windowHeight * percentageToCalc + yPos) / windowHeight
 
-    setPosition(finalPos + '%')
+    setPosition(finalPos)
   }
 
   const viewWidth = {
-    height: position,
+    transform: `scaleY(${position})`,
   }
 
   return (
