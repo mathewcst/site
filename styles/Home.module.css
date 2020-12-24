@@ -18,10 +18,11 @@
   height: 100%;
   z-index: 1;
   overflow: hidden;
+  transition: height 10ms ease-in-out;
 }
+
 .view {
-  height: 95%;
-  background: blue;
+  background: #474747;
   z-index: 2;
 }
 
@@ -37,4 +38,5 @@
   left: 0;
   background: white;
   z-index: 3;
+  cursor: row-resize;
 }

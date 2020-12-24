@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css'
 import { materialDark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 export default function Home() {
-  const [position, setPosition] = useState('0.95')
+  const [position, setPosition] = useState('95%')
 
   const codeString = `import { useState } from 'react'
 import Draggable from 'react-draggable'
@@ -66,20 +66,21 @@ export default function Home() {
 }
 `
 
-  // const handleDrag = (ev, data) => {
-  //   const windowHeight = window.innerHeight
-  //   const yPos = data.deltaY + data.y
+  const handleDrag = (ev, data) => {
+    const windowHeight = window.innerHeight
+    const yPos = data.deltaY + data.y
 
-  //   const percentageToCalc = 0.95
+    const percentageToCalc = 0.95
 
-  //   const finalPos = (windowHeight * percentageToCalc + yPos) / windowHeight
+    const finalPos =
+      ((windowHeight * percentageToCalc + yPos) / windowHeight) * 100
 
-  //   setPosition(finalPos)
-  // }
+    setPosition(finalPos + '%')
+  }
 
-  // const viewWidth = {
-  //   transform: `scaleY(${position})`,
-  // }
+  const viewWidth = {
+    height: position,
+  }
 
   return (
     <div className={styles.container}>
@@ -89,13 +90,13 @@ export default function Home() {
       </Head>
 
       <main role='main' className={styles.content}>
-        <Draggable axis='y'>
-          {/* <div className={styles.slider}></div> */}
-
-          <section className={styles.view}>
-            <h2 className={styles.title}>I'm View</h2>
-          </section>
+        <Draggable axis='y' bounds='parent' onDrag={handleDrag}>
+          <div className={styles.slider}></div>
         </Draggable>
+
+        <section className={styles.view} style={viewWidth}>
+          <h2 className={styles.title}>I'm View</h2>
+        </section>
 
         <section className={styles.code}>
           <SyntaxHighlighter
