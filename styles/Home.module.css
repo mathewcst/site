@@ -18,12 +18,26 @@
   height: 100%;
   z-index: 1;
   overflow: hidden;
-  transition: height 10ms ease-in-out;
+}
+
+.code {
+  padding-top: 6%;
+  overflow-y: scroll;
 }
 
 .view {
   background: #474747;
   z-index: 2;
+  transform: scaleY(0.95);
+  transform-origin: top center;
+}
+
+.show {
+  animation: showCode 200ms ease-in-out 0s forwards;
+}
+
+.hide {
+  animation: hideCode 200ms ease-in-out 0s forwards;
 }
 
 .title {
@@ -39,4 +53,28 @@
   background: white;
   z-index: 3;
   cursor: row-resize;
+}
+
+@keyframes showCode {
+  from {
+    /* transform: scaleY(0.95); */
+    height: 99%;
+  }
+
+  to {
+    /* transform: scaleY(0.1); */
+    height: 10%;
+  }
+}
+
+@keyframes hideCode {
+  from {
+    /* transform: scaleY(0.1); */
+    height: 10%;
+  }
+
+  to {
+    /* transform: scaleY(0.95); */
+    height: 99%;
+  }
 }

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Draggable from 'react-draggable'
 import Head from 'next/head'
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
@@ -8,7 +7,7 @@ import styles from '../styles/Home.module.css'
 import { materialDark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 export default function Home() {
-  const [position, setPosition] = useState('95%')
+  const [show, setShow] = useState(false)
 
   const codeString = `import { useState } from 'react'
 import Draggable from 'react-draggable'
@@ -66,20 +65,10 @@ export default function Home() {
 }
 `
 
-  const handleDrag = (ev, data) => {
-    const windowHeight = window.innerHeight
-    const yPos = data.deltaY + data.y
+  function handleShowCode() {
+    const oposite = !show
 
-    const percentageToCalc = 0.95
-
-    const finalPos =
-      ((windowHeight * percentageToCalc + yPos) / windowHeight) * 100
-
-    setPosition(finalPos + '%')
-  }
-
-  const viewWidth = {
-    height: position,
+    setShow(oposite)
   }
 
   return (
@@ -90,12 +79,11 @@ export default function Home() {
       </Head>
 
       <main role='main' className={styles.content}>
-        <Draggable axis='y' bounds='parent' onDrag={handleDrag}>
-          <div className={styles.slider}></div>
-        </Draggable>
-
-        <section className={styles.view} style={viewWidth}>
+        <section
+          className={[styles.view, show ? styles.show : styles.hide].join(' ')}>
           <h2 className={styles.title}>I'm View</h2>
+
+          <button onClick={handleShowCode}>Show me the code</button>
         </section>
 
         <section className={styles.code}>
