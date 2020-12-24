@@ -30,6 +30,7 @@
   z-index: 2;
   transform: scaleY(0.95);
   transform-origin: top center;
+  will-change: transform;
 }
 
 .show {
