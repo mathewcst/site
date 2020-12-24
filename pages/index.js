@@ -66,20 +66,20 @@ export default function Home() {
 }
 `
 
-  const handleDrag = (ev, data) => {
-    const windowHeight = window.innerHeight
-    const yPos = data.deltaY + data.y
+  // const handleDrag = (ev, data) => {
+  //   const windowHeight = window.innerHeight
+  //   const yPos = data.deltaY + data.y
 
-    const percentageToCalc = 0.95
+  //   const percentageToCalc = 0.95
 
-    const finalPos = (windowHeight * percentageToCalc + yPos) / windowHeight
+  //   const finalPos = (windowHeight * percentageToCalc + yPos) / windowHeight
 
-    setPosition(finalPos)
-  }
+  //   setPosition(finalPos)
+  // }
 
-  const viewWidth = {
-    transform: `scaleY(${position})`,
-  }
+  // const viewWidth = {
+  //   transform: `scaleY(${position})`,
+  // }
 
   return (
     <div className={styles.container}>
@@ -89,13 +89,13 @@ export default function Home() {
       </Head>
 
       <main role='main' className={styles.content}>
-        <Draggable axis='y' bounds='parent' onDrag={handleDrag}>
-          <div className={styles.slider}></div>
-        </Draggable>
+        <Draggable axis='y'>
+          {/* <div className={styles.slider}></div> */}
 
-        <section className={styles.view} style={viewWidth}>
-          <h2 className={styles.title}>I'm View</h2>
-        </section>
+          <section className={styles.view}>
+            <h2 className={styles.title}>I'm View</h2>
+          </section>
+        </Draggable>
 
         <section className={styles.code}>
           <SyntaxHighlighter
