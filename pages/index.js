@@ -1,98 +1,68 @@
-import { useState } from 'react'
 import Head from 'next/head'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faGithub,
+  faTwitch,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-
-import styles from '../styles/Home.module.css'
-import { materialDark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
-
-export default function Home() {
-  const [show, setShow] = useState(false)
-
-  const codeString = `import { useState } from 'react'
-import Draggable from 'react-draggable'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  const [position, setPosition] = useState('95%')
-
-  const codeString = '(num) => num + 1'
-
-  const handleDrag = (ev, data) => {
-    const windowHeight = window.innerHeight
-    const yPos = data.deltaY + data.y
-
-    const percentageToCalc = 0.95
-
-    const finalPos =
-      ((windowHeight * percentageToCalc + yPos) / windowHeight) * 100
-
-    setPosition(finalPos + '%')
-  }
-
-  const viewWidth = {
-    height: position,
-  }
-
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Mathew Costa</title>
-        <link rel='icon' href='/favicon.ico' />
+        <title>Matheus Costa</title>
       </Head>
-
       <main role='main' className={styles.content}>
-        <Draggable axis='y' bounds='parent' onDrag={handleDrag}>
-          <div className={styles.slider}>a</div>
-        </Draggable>
+        <section className={styles.view}>
+          <div className={styles.social}>
+            <h1 className={styles.title}>
+              Hello there,
+              <br />
+              I'm <strong>Mathew Costa</strong>
+            </h1>
+            <ul className={styles.links}>
+              <li>
+                <a
+                  href='https://github.com/mathewcst'
+                  title='GitHub'
+                  target='_blank'>
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href='https://twitch.tv/mathewcst'
+                  title='Twitch'
+                  target='_blank'>
+                  <FontAwesomeIcon icon={faTwitch} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href='https://twitter.com/mathewcst'
+                  title='Twitter'
+                  target='_blank'>
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href='mailto:eu@mathewcosta.com'
+                  title='Email'
+                  target='_blank'>
+                  <FontAwesomeIcon icon={faEnvelope} />
+                </a>
+              </li>
+            </ul>
+            <h2 className={styles.subtitle}>freelancer developer & designer</h2>
+          </div>
 
-        <section className={styles.view} style={viewWidth}>
-          <h2 className={styles.title}>I'm View</h2>
-        </section>
-
-        <section className={styles.code}>
-          <SyntaxHighlighter
-            language='javascript'
-            style={materialDark}></SyntaxHighlighter>
-        </section>
-      </main>
-    </div>
-  )
-}
-`
-
-  function handleShowCode() {
-    const oposite = !show
-
-    setShow(oposite)
-  }
-
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Mathew Costa</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-
-      <main role='main' className={styles.content}>
-        <section
-          className={[styles.view, show ? styles.show : styles.hide].join(' ')}>
-          <h2 className={styles.title}>I'm View</h2>
-
-          <button onClick={handleShowCode}>Show me the code</button>
-        </section>
-
-        <section className={styles.code}>
-          <SyntaxHighlighter
-            language='jsx'
-            style={materialDark}
-            showLineNumbers={true}>
-            {codeString}
-          </SyntaxHighlighter>
+          <div className={styles.avatar}>
+            <img src='./Avatar_3.png' />
+          </div>
         </section>
       </main>
     </div>
