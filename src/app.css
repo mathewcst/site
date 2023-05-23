@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply font-fira;
+  @apply font-fira bg-neutral;
 }

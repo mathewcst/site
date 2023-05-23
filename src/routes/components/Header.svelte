@@ -16,7 +16,7 @@
 	];
 </script>
 
-<header class="sticky top-0 z-10 bg-opacity-50 bg-neutral">
+<header class="sticky top-0 z-10 h-16 bg-opacity-50 bg-neutral">
 	<div class="container max-w-screen-lg mx-auto">
 		<nav class="flex items-center justify-center py-4">
 			<ul class="flex flex-row items-center justify-center gap-12">

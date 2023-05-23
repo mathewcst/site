@@ -7,7 +7,7 @@
 	import Header from './components/Header.svelte';
 </script>
 
-<div id="app" class="h-screen bg-neutral">
+<div id="app" class="min-h-screen overflow-y-scroll">
 	<Header />
 
 	<main>
