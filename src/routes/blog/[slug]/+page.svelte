@@ -3,6 +3,7 @@
 	export let data: PageData;
 
 	import Container from '$/lib/components/Container.svelte';
+	import CategoriesTag from '$/lib/components/Posts/CategoriesTag.svelte';
 	import ScrollToTopBtn from '$/lib/components/ScrollToTopBtn.svelte';
 	import { formatDate } from '$/lib/utils';
 
@@ -15,6 +16,7 @@
 	<meta property="og:title" content={metadata.title} />
 	<meta property="og:description" content={metadata.description} />
 	<meta property="og:type" content="article" />
+	<meta property="article:published_time" content={metadata.date} />
 </svelte:head>
 
 <article>
@@ -23,11 +25,7 @@
 		<h1 class="my-4 text-4xl text-secondary">{metadata.title}</h1>
 		<h2>{metadata.description}</h2>
 
-		<ul class="flex flex-row gap-4 my-4">
-			{#each metadata.categories as category}
-				<li class="p-2 rounded-lg bg-base-100">#{category}</li>
-			{/each}
-		</ul>
+		<CategoriesTag categories={metadata.categories} />
 
 		<div class="prose">
 			<svelte:component this={content} />
