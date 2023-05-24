@@ -23,7 +23,9 @@ const mdsvexOptions = {
 				theme: 'dracula'
 			});
 
-			const html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
+			let html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
+			html = html.replace(/<pre/g, `<pre data-code="${code}"`);
+
 			return `{@html \`${html}\`}`;
 		}
 	},

@@ -1,6 +1,6 @@
 ---
 title: Why you should NOT hire me.
-description: Some reasons why I gave up on a 9-to-5 job.
+description: Some reasons why I gave up on 9-to-5 jobs.
 date: '2023-05-23T23:52:19.584Z'
 categories: ['web-development', 'career']
 published: true

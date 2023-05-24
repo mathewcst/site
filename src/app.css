@@ -5,3 +5,19 @@
 body {
   @apply font-fira bg-neutral;
 }
+
+pre {
+  position: relative;
+}
+
+.copy-button {
+  @apply absolute top-0 right-0 p-2 bg-white rounded-bl rounded-tr bg-opacity-50 text-black;
+}
+
+.copy-button:focus {
+  @apply outline-none bg-green-500;
+}
+
+.copy-button:hover {
+  @apply opacity-50;
+}
