@@ -11,7 +11,7 @@
 	import Transition from './components/Transition.svelte';
 </script>
 
-<div id="app" class="min-h-screen overflow-y-scroll">
+<div id="app" class="min-h-screen">
 	<Header />
 
 	<main>

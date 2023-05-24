@@ -3,6 +3,7 @@
 	export let data: PageData;
 
 	import Container from '$/lib/components/Container.svelte';
+	import ScrollToTopBtn from '$/lib/components/ScrollToTopBtn.svelte';
 	import { formatDate } from '$/lib/utils';
 
 	const { content, metadata } = data;
@@ -17,7 +18,7 @@
 </svelte:head>
 
 <article>
-	<Container>
+	<Container class="flex flex-col items-center justify-center">
 		<p>{formatDate(metadata.date)}</p>
 		<h1 class="my-4 text-4xl text-secondary">{metadata.title}</h1>
 		<h2>{metadata.description}</h2>
@@ -32,4 +33,6 @@
 			<svelte:component this={content} />
 		</div>
 	</Container>
+
+	<ScrollToTopBtn />
 </article>
