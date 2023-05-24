@@ -10,8 +10,8 @@
 			href: '/'
 		},
 		{
-			name: 'About',
-			href: '/about'
+			name: 'Blog',
+			href: '/blog'
 		}
 	];
 </script>

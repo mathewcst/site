@@ -1,11 +1,34 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
-import { mdsvex } from 'mdsvex';
+import { escapeSvelte, mdsvex } from 'mdsvex';
+
+// Code Hightlighting
+import shiki from 'shiki';
+
+// Markdown Plugins
+import rehypeSlug from 'rehype-slug';
+import remarkToc from 'remark-toc';
+import remarkUnwrapImages from 'remark-unwrap-images';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-	extensions: ['.md']
+	extensions: ['.md'],
+	layout: {
+		_: './src/lib/mdsvex/layout.svelte'
+	},
+	highlight: {
+		highlighter: async (code, lang = 'text') => {
+			const highlighter = await shiki.getHighlighter({
+				theme: 'dracula'
+			});
+
+			const html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
+			return `{@html \`${html}\`}`;
+		}
+	},
+	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
+	rehypePlugins: [rehypeSlug]
 };
 
 /** @type {import('@sveltejs/kit').Config} */

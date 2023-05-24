@@ -3,6 +3,7 @@
 	export let data: PageData;
 
 	import Container from '$/lib/components/Container.svelte';
+	import { formatDate } from '$/lib/utils';
 
 	const { posts } = data;
 </script>
@@ -19,12 +20,13 @@
 
 			<p class="mt-8 text-base-content">Here are some stuff I've blogged about:</p>
 
-			<div class="flex flex-col w-[300px] h-[100px] my-4 gap-2">
+			<div class="flex flex-col w-full max-w-[350px] h-[100px] my-4 gap-2">
 				{#each posts as post}
 					<a href="/blog/{post.slug}">
 						<div class="w-full p-4 bg-base-200">
-							<h3 class="text-2xl text-primary">{post.title}</h3>
-							<p class="px-1">{post.description}</p>
+							<p class="text-sm italic">{formatDate(post.date)}</p>
+							<h3 class="my-2 text-2xl text-secondary">{post.title}</h3>
+							<p class="text-lg">{post.description}</p>
 						</div>
 					</a>
 				{/each}
