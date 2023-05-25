@@ -54,7 +54,9 @@
 
 			<p class="mt-8 text-base-content">Here are some stuff I've blogged about:</p>
 
-			<PostList {posts} show_blog_link={true} />
+			<div class="max-w-sm">
+				<PostList {posts} show_blog_link={true} />
+			</div>
 		</div>
 
 		<div class="relative top-0 sm:top-4 order-0 sm:order-1">
