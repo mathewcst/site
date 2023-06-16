@@ -27,7 +27,7 @@
 
 		<CategoriesTag categories={metadata.categories} />
 
-		<div class="prose">
+		<div class="text-lg prose">
 			<svelte:component this={content} />
 		</div>
 	</Container>
