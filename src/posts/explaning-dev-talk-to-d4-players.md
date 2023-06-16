@@ -1,6 +1,6 @@
 ---
 title: Explaining Dev Stuff to Diablo 4 Players.
-description: 'Breaking free from the 9-to-5: A candid rant on why I refuse to seek traditional employment.'
+description: 'Development is harder than it looks.'
 date: '2023-06-16T19:48:24.178Z'
 categories: ['game-development', 'talk']
 published: true
