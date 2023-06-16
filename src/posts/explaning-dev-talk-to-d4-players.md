@@ -6,9 +6,9 @@ categories: ['game-development', 'talk']
 published: true
 ---
 
-## Table of Contents
-
 While watching the "Campfire Talk" livestream, I noticed that some players become frustrated when developers discuss release cycles, bug fixes, and adding new features. As a developer with 12 years of experience, I've encountered these frustrations firsthand when interacting with customers. I love explaining these concepts, so I decided to create this post to shed some light on the subject.
+
+## Table of Contents
 
 ## Bug Fixes and QA
 
