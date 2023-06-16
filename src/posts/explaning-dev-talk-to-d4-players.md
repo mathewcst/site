@@ -35,7 +35,7 @@ A hotfix addresses a **very small issue**, such as a variable, a name, or a tool
 
 If a bug affects multiple aspects or systems (gem bags for example), it would escalate to a patch, a minor change, or even a major change. The higher the level, the more challenging it becomes to fix and release to the public. A major change often means that everything prior to that point will no longer function the same way.
 
-## Release Cycles, Certs, and Providing Effective Bug Reports
+## Release Cycles and Certs
 
 Now that we understand the complexities of bug fixes and the significance of hotfixes, let's delve into why it takes time to release larger patches.
 
