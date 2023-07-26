@@ -3,7 +3,7 @@ title: Why you should NOT hire me.
 description: 'Breaking free from the 9-to-5: A candid rant on why I refuse to seek traditional employment.'
 date: '2023-05-24T23:50:31.458Z'
 categories: ['web-development', 'career']
-published: true
+published: false
 ---
 
 ## Table of Contents
