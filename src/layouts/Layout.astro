@@ -12,12 +12,55 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#520f69" />
+    <meta name="msapplication-TileColor" content="#520f69" />
+    <meta name="theme-color" content="#520f69" />
+
+    <!-- META TAGS -->
+    <!-- Primary Meta Tags -->
+    <title>Matheus Costa | Indie Developer</title>
+    <meta name="title" content="Matheus Costa | Indie Developer" />
+    <meta name="description" content="I make stuff" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mathewcosta.com/" />
+    <meta property="og:title" content="Matheus Costa | Indie Developer" />
+    <meta property="og:description" content="I make stuff" />
+    <meta property="og:image" content="https://www.mathewcosta.com/meta.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.mathewcosta.com/" />
+    <meta property="twitter:title" content="Matheus Costa | Indie Developer" />
+    <meta property="twitter:description" content="I make stuff" />
+    <meta
+      property="twitter:image"
+      content="https://www.mathewcosta.com/meta.webp"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
     <title>{title}</title>
   </head>
-  <body>
+  <body class="pattern-bg">
     <slot />
   </body>
 </html>
+
+<style>
+  .pattern-bg {
+    background-color: #501068;
+    opacity: 0.8;
+    background-image: linear-gradient(#450c57 1px, transparent 1px),
+      linear-gradient(to right, #450c57 1px, #501068 1px);
+    background-size: 20px 20px;
+  }
+</style>
