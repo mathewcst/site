@@ -16,6 +16,7 @@
     "@astrojs/tailwind": "^5.0.2",
     "@astrojs/vercel": "^5.2.0",
     "astro": "^3.5.0",
+    "flowbite": "^2.1.1",
     "svelte": "^4.0.0",
     "tailwindcss": "^3.0.24",
     "typescript": "^5.2.2"
