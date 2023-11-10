@@ -6,7 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        fira: ["Fira Mono", "monospace"],
+      },
       colors: {
+        "m-black": "#191d24",
         "m-purple": "#501068",
         "m-purple-dark": "#450c57",
         "m-teal": "#7bffc9",

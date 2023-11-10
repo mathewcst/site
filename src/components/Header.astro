@@ -1,0 +1,22 @@
+---
+import Container from "./Container.astro";
+---
+
+<header class="relative z-10 w-full">
+  <Container classes="flex flex-row items-center justify-center">
+    <nav>
+      <ul
+        class="flex flex-row items-center justify-center gap-8 py-4 text-white"
+      >
+        <li>
+          <a href="/" class="hover:underline transition-all duration-200"
+            >home</a>
+        </li>
+        <li>
+          <a href="/blog" class="hover:underline transition-all duration-200"
+            >blog</a>
+        </li>
+      </ul>
+    </nav>
+  </Container>
+</header>
