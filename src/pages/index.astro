@@ -55,7 +55,12 @@ import Avatar from "@/assets/avatar.webp";
         </ul>
       </div>
 
-      <Image src={Avatar} alt="Matthew" loading="eager" />
+      <Image
+        src={Avatar}
+        alt="Matthew"
+        loading="eager"
+        widths={[240, 540, 720, Avatar.width]}
+      />
     </section>
   </Container>
 </Layout>
