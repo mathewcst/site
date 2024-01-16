@@ -1,66 +1,11 @@
 ---
-import { Icon } from "astro-icon/components";
-import { Image } from "astro:assets";
-
-import Container from "@/components/Container.astro";
-
+import Intro from "@/components/Home/Intro.astro";
+import RecentWork from "@/components/Home/RecentWork.astro";
 import Layout from "../layouts/Layout.astro";
-
-import Avatar from "@/assets/avatar.webp";
 ---
 
 <Layout title="Welcome to Astro.">
-  <Container classes="my-8 sm:my-24">
-    <section class="grid grid-cols-1 sm:grid-cols-2 items-center justify-start">
-      <div
-        class="flex flex-col items-center sm:items-end justify-start text-center sm:text-end"
-      >
-        <h1 class="text-5xl font-light">Hi👋, I'm Matthew</h1>
-        <h2 class="text-2xl font-light">...and I make stuff</h2>
+  <Intro />
 
-        <ul class="flex flex-row items-start justify-center gap-4 my-4">
-          <li>
-            <a
-              href="https://twitter.com/mathewcst"
-              target="_blank"
-              rel="noreferrer"
-              title="Twitter"
-              class="bg-m-purple-dark w-8 h-8 rounded-full flex items-center justify-center hover:bg-white text-white hover:text-m-purple-dark transition-all duration-200"
-            >
-              <Icon name="mdi:twitter" class="w-4 h-4" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitch.tv/mathewcst"
-              target="_blank"
-              rel="noreferrer"
-              title="Twitch"
-              class="bg-m-purple-dark w-8 h-8 rounded-full flex items-center justify-center hover:bg-white text-white hover:text-m-purple-dark transition-all duration-200"
-            >
-              <Icon name="mdi:twitch" class="w-4 h-4" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/mathewcst"
-              target="_blank"
-              rel="noreferrer"
-              title="GitHub"
-              class="bg-m-purple-dark w-8 h-8 rounded-full flex items-center justify-center hover:bg-white text-white hover:text-m-purple-dark transition-all duration-200"
-            >
-              <Icon name="mdi:github" class="w-4 h-4" />
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <Image
-        src={Avatar}
-        alt="Matthew"
-        loading="eager"
-        widths={[240, 540, 720, Avatar.width]}
-      />
-    </section>
-  </Container>
+  <RecentWork />
 </Layout>

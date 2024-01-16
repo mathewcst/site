@@ -7,6 +7,7 @@ import "@/global.css";
 import "@fontsource-variable/fira-code";
 
 // Components
+import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 import PatternBg from "@/components/PatternBg.astro";
 interface Props {
@@ -71,6 +72,8 @@ const { title } = Astro.props;
       <main class="relative z-10 text-white">
         <slot />
       </main>
+
+      <Footer />
     </div>
   </body>
 </html>

@@ -1,0 +1,24 @@
+---
+interface Props {
+  image_src: any;
+  name: string;
+  link: string;
+}
+
+const { image_src, name, link } = Astro.props;
+
+import { Image } from "astro:assets";
+---
+
+<div class="w-full sm:w-64 h-56 flex items-center justify-center">
+  <a href={link} target="_blank" title={name}>
+    <Image
+      src={image_src}
+      alt={name}
+      loading="eager"
+      class="aspect-square object-cover object-center w-64 h-56"
+      widths={[240, 540, 720, image_src.width]}
+    />
+    <p>{name}</p>
+  </a>
+</div>

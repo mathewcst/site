@@ -1,0 +1,36 @@
+---
+import Container from "../Container.astro";
+
+import Bryan from "@/assets/bryan_behr.webp";
+import Gabriel from "@/assets/gabriel_gonti.webp";
+import Carnaval from "@/assets/ticketmaster.webp";
+import WorkItem from "./WorkItem.astro";
+---
+
+<section class="w-full bg-m-black">
+  <Container classes="p-8">
+    <h2 class="text-white text-2xl uppercase font-light">Recent Work</h2>
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-3 gap-8 my-8 items-center justify-center"
+    >
+      <WorkItem
+        image_src={Bryan}
+        link="https://www.bryanbehr.com.br/"
+        name="Bryan Behr"
+      />
+
+      <WorkItem
+        image_src={Gabriel}
+        link="https://www.gabrielgonti.com/"
+        name="Gabriel Gonti"
+      />
+
+      <WorkItem
+        image_src={Carnaval}
+        link="https://www.ticketmaster.com.br/event/riocarnaval2024"
+        name="Rio Carnaval 2024"
+      />
+    </div>
+  </Container>
+</section>
